@@ -1,0 +1,24 @@
+=> LOGIN
+    => http://localhost:3000/auth/login/user
+    => Request => POST
+    => Body
+        {
+          "email": "user@example.com"
+        }
+
+=> Dealership Login
+    => http://localhost:3000/auth/login/dealership
+    => Request => POST
+    => Body
+        {
+         "email": "dealership@example.com"
+        }
+
+=> Token Validation
+    => http://localhost:3000/auth/validate-token
+    => Request => POST
+    => JWT Token=>
+       {
+        key: 'Auth'
+        Value:"jwt Token"
+       }
